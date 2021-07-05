@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    font-family: Roboto;
+    width: 400;
+
+}
+.descuentos {
+    width: 100%;
+    height: 38px;
+    background: #1CD1B0;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.titulo {
+    background: #00669F;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 101px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+
+main {
+    margin: 100px auto;
+    text-align: center;
+}
+    
+main > div {
+    display: inline-block;
+    width: 20%;
+    margin: 40px;
+    background-color: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+    
+.header-tarjeta-batman, .header-tarjeta-harley, .header-tarjeta-flash {
+    height: 193px;
+    border-radius: 16px 16px 0px 0px;
+    background-size: cover;
+}
+    
+.header-tarjeta-batman {    
+        background-image: url('../img/fondo1.png');
+    }
+    
+.header-tarjeta-harley{ 
+    background-image: url('../img/fondo2.png');
+    }
+    
+.header-tarjeta-flash {
+    background-image: url("../img/fondo3.png");
+}
+.descripcion{
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+}
+    
+.descripcion h2 {
+    margin: 10px auto;
+    }
+    
+.descripcion p {
+    text-align: left;
+    }
+    
+button {
+    background-color: #00669F;
+    color: white;
+    margin: 30px;
+    padding: 5px;
+    width: 128.78px;
+    height: 48.52px;
+    font-size: 15px;
+    border: none;
+}
+    
+i {
+    position: relative;
+    bottom: 80px;
+    right: 42px;
+    color:#CC2424;
+    font-size: 20px;
+}
+    
+img {
+    border-radius: 50%;
+    position: relative;
+    top: 128px;
+}
+    
+footer {
+    background-color: #00669F;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+    
