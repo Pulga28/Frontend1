@@ -1,209 +1,275 @@
-html{
-    background-color: #e5e5e5;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 13px;
-    line-height: 15px;
-}
-body{
-    width: 1024px;
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-#datos{
-    height: 284px;
-    background: #3C2313;
-    clear: both;
-}
-#info{
-    padding: 10px 50px;
-}
-.logo-footer{
-    float: right !important;
-    margin-top: 120px;
-}
-.tit{
-    color: #fff;
+body {
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
 }
-.desc{
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 12px;
-    color: #8A8787;
+
+header {
+    display: flex;
+    flex-wrap: wrap;
 }
-#info img{
-    vertical-align: text-top;
-    float: left;
-    margin-right: 20px;
+
+/* Header */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
 }
-#info div{
-    margin: 20px;
-    display: flow-root;
-}
-#copy{
-    background: #222;
-    color: #fff;
-    text-align:center;
+
+#header-superior{
+    background: black;
+    color: white;
+    width: 100%;
     padding: 5px;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 12px;
-}
-#banner{
-    background-color: white;
-    text-align: center;
-    padding-top: 15px;
-}
-h1, h2{
-    color: #3C2313;
-    padding: 10px;
-}
-#opc-banner{
-    padding: 10px;
-    width: 75px;
-    height: 18px;
-    left: 489px;
-    top: 653px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 18px;
-    /* identical to box height */
-    color: #666666;
 }
 
-#producto{
-    text-align: center;
-    position: relative;
+#header-superior nav{
+    float: right;
+}
+
+#header-superior p{
     float: left;
-    width: 311px;
-    height: 350px;
+}
 
-    padding: 15.1px;
+#header-superior a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+#header-estatico{
+    background-color: #F0A83E;
+    width: 100%;
+    padding: 20px;
+}
+
+#header-estatico #logo{
+    float: left;
+}
+
+#header-estatico nav{
+    float: right;
+}
+
+#header-estatico nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#header-estatico nav a img{
+    padding-right: 5px;
+}
+
+#banner{
+    background: url(../img/bowl.png);
+    height: 500px;
+    background-size: cover;
+}
+
+#banner div{
+    text-align: center;
+    width: 350px;
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    height: auto;
+}
+
+#banner h3{
+    background: white;
+    font-size: 30px;
+    width: 340px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#banner p{
+    margin: 10px;
+    color: #3C2313;
+    font-size: 16px;
+}
+
+#banner a {
+    background: #F0A83E;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+#productos-destacados{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+#productos-destacados h3{
+    font-size: 40px;
+    margin: 30px
+}
+
+#productos-destacados #resumen-productos{
+    color: #666666;
+    margin: 30px;
+}
+
+#productos-destacados .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor article{
+    margin: 20px;
     background: #FBFAF6;
 }
 
-#descripcion{
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-
+.nombre-producto {
     color: #3C2313;
-
-}
-#precio{
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
     font-size: 15px;
-    line-height: 18px;
+}
 
+.precio {
+    font-size: 15px;
     color: #F0A83E;
 }
 
-input{
-    margin: 5px;
-    width: 340px;
-    height: 40px;
-    left: calc(50% - 340px/2 + 1px);
-    top: calc(50% - 40px/2 + 275.5px);
-
-    background: #3C2313;
-    border-radius: 15px;
+#formulario {
+    text-align: center;
+    margin: 50px;
 }
 
-::placeholder {
+#formulario h3{
+    color: #3C2313;
+    font-size: 25px;
+    padding: 10px;
+}
+
+#formulario .txt-celda{
+    width: 400px;
+    margin: 5px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+    background: #3C2313;
+}
+
+#formulario .txt-celda::placeholder{
     color: white;
     font-size: 9px;
-    padding-left: 15px;
-  }
+}
 
-  button{
-    margin: 10px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+#formulario .boton-reset{
+    width: 120px;
     font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-    color: #FFFFFF;
-
-  }
-  .reset{
-    width: 110px;
-    height: 34px;
-    left: calc(50% - 110px/2 - 52px);
-    top: calc(50% - 34px/2 + 453.5px);
-    
+    margin: 35px 10px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
     background: #8A8787;
-    border-radius: 15px;
-  }
-  
-  .submit{
-    width: 110px;
-    height: 34px;
-    left: calc(50% - 110px/2 + 64px);
-    top: calc(50% - 34px/2 + 453.5px);
-    
+}
+
+#formulario .boton-enviar{
+    width: 120px;
+    font-size: 16px;
+    margin: 35px 10px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
     background: #F0A83E;
-    border-radius: 15px;
-    border-color: #F0A83E;
-  }
+}
 
-  #suscribirse{
-      background-color: #F0A83E;
-      padding: 20px;
-  }
+#form-suscripcion{
+    background: #F0A83E;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
 
-  #msg{
-    padding: 5px;
-    left: calc(50% - 288px/2 - 295px);
-    top: calc(50% - 23px/2 + 577px);
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
+#form-suscripcion h3{
     font-size: 20px;
-    line-height: 23px;
+    margin: 13px 10px;
+}
 
-    color: #FFFFFF;
-  }
+#form-suscripcion div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
 
-  input.email{
-    margin-left: 250px;
+#form-suscripcion form{
+    margin-left: 40%;
+}
+
+
+#form-suscripcion form .txt-celda{
     width: 271px;
     height: 40px;
-    left: calc(50% - 271px/2 + 254.5px);
-    top: calc(50% - 40px/2 + 575.5px);
-    
-    background: #FFFFFF;
     border-radius: 15px;
-  }
-  .email::placeholder{
-    color: rgb(0, 0, 0);
-    font-size: 9px;
-    padding-left: 15px;
-  }
-  button.suscribirme{
+    padding: 5px;
+}
+
+
+
+#form-suscripcion form .boton-suscrip{
     width: 70px;
     height: 34px;
-    left: calc(50% - 70px/2 + 430px);
-    top: calc(50% - 34px/2 + 575.5px);
-
-    background: #3C2313;
     border-radius: 15px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
+    padding: 5px;
+    background-color: #3C2313;
+    color: white;
     font-size: 9px;
-    line-height: 11px;
-    /* identical to box height */
-    color: #FFFFFF;
-  }
+}
+
+
+#info-adicional{
+    background: #3C2313;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.iconos-info{
+    margin: 20px;
+}
+
+#info-adicional .contenedor{
+    display: flex;
+}
+
+
+#info-adicional .contenedor div h3{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#info-adicional .contenedor div p{
+    font-size: 10px;
+    color: #8A8787;
+}
+
+#contenedor-logo2{
+    margin: auto;
+    margin-right: 10%;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+}
+
+
